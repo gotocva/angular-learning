@@ -1,9 +1,19 @@
+<!-- <p-megaMenu [model]="items"></p-megaMenu> -->
+
+<p-menubar [model]="menuItems"></p-menubar>
+
 <p>header works!</p>
 
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
+
+<p-card header="{{cardTitle}}" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+      quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+</p-card>
+
+
+<div *ngFor="let result of results">
+  <p-card header="{{result.package.description}}" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+  </p-card>
 </div>
 
 <input type="text" [(ngModel)]="myVariable" (input)="textChanged()"  >
