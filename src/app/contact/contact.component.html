@@ -1,4 +1,40 @@
-<p>contact works!</p>
+<!-- <p>contact works!</p> -->
+
+<div>
+  <h2 class="text-center">Login Form</h2>
+</div>
+
+<!-- <form class="form-container px-4">
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+           placeholder="Ex. pat@example.com">
+    <mat-hint>Errors appear instantly!</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input type="text" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+           placeholder="Ex. pat@example.com">
+    <mat-hint>Errors appear instantly!</mat-hint>
+  </mat-form-field>
+
+</form> -->
 
 
-<button (click)="showToast()"> show toast</button>
+
+  <mat-card class="form-container mx-auto w-50 px-4">
+  <mat-form-field>
+    <input type="email" matInput placeholder="Enter your email">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Enter your password">
+  </mat-form-field>
+
+  <button mat-raised-button color="warn">Login</button>
+  </mat-card>
+
+
+
+<!-- <button (click)="showToast()"> show toast</button> -->
